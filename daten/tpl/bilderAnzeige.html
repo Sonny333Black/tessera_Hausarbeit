@@ -1,0 +1,10 @@
+<!--bilderAnzeige.html-->
+{{if .GenBilder}}
+<div  id="poolart" data-poolart="generatepooltypeauswahl">
+{{else}}
+<div  id="poolart" data-poolart="uploadpooltypeauswahl">
+{{end}}
+	{{range .Bilder}}
+	<img alt="" src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.Bild}}"/>
+	{{end}}
+</div>

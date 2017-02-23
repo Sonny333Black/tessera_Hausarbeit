@@ -1,0 +1,66 @@
+body{
+	text-align:center;
+	background-color:#CDFFDB;
+	font-family: Sans-Serif, Arial, Helvetica;
+}
+
+button{
+	float:left;
+	border:6px solid #C7E84F;
+	margin:6px;
+	border-radius:10px;
+	width:auto;
+	font-size:18px;
+
+
+}
+
+#delete{
+	margin-left:70%;
+}
+#logout{
+	margin-left:70%;
+}
+#totalgrey{
+	width:100%;
+	height:100%;
+	background-color:#CDFFDB;
+	z-index:101;
+	position:fixed;
+	
+}
+
+#ladeB{
+	width:150px;
+	height:80%;
+	z-index:102;
+	border-radius:10px;
+	border:1px solid black;
+	margin-right:auto;
+	margin-left:auto;
+}
+#logo{
+	font-size:2em;
+}
+#userName{
+	font-size:1.2em;
+}
+.poolminidivs {
+	border-radius:10px;
+	border:1px solid black;
+	margin:1px;
+	display:block;
+	text-align:center;
+	width:200px;
+	
+	
+}
+.poolminidivs button{
+	
+	min-width:170px;
+	margin-left:7%;
+}
+
+input[type=radio]{
+  margin-top:4%
+}

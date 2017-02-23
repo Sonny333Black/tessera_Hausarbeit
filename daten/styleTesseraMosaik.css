@@ -1,0 +1,129 @@
+#mosaikTabs{
+	text-align :center;
+	margin-top:5%;
+	margin-left:40%;
+	margin-bottom:5%%;
+
+
+}
+#bilderSammlung{
+	float:left;
+	background-color:orange;
+	width:100%;
+	height:100%;
+	opacity:1;
+}
+
+#mosaikGenEinstellungen{
+	float:left;
+	width:250px;
+	min-height:450px;
+	height: auto;
+	background-color:#4EE8AD;
+	display:block;
+	text-align:center;
+	border-radius:5px;
+	position:fixed;
+	border:solid #A3FF8A 10px;
+	
+}
+#mosaikGenEinstellungen img{
+max-height:250px;
+	
+}
+
+#macheMosaikButton{
+	margin-top:15%;
+}
+#goBack{
+	margin-top:15%;
+}
+input[type="radio"]{
+	
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	
+}
+#sammlungAnzeige{
+	float:left;
+	background-color:green;
+	width:100%;
+	height:100%;
+	opacity:1;
+}
+#infosBildMosaik{
+	float:right;
+	margin-top:-30%;
+	border:solid black 2px;
+	width:20%;
+	background-color:#5BFF80;
+	height:auto;
+	min-height:400px;
+	border-radius:10px;
+	border:6px solid #00E83F;
+
+}
+#mosaikBild{
+	margin-right:15%;
+	
+	
+}
+#mosaikBild img{
+	width:600px;
+	height:600px;
+	
+
+}
+#mosaikUI{
+	width:100%;
+}
+#mosaikGenEinstellungen label{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+
+}
+
+.pooldivs{
+	margin-left:5%;
+	text-align:center;
+	width:10%;
+	height:100%;
+	border:solid black 2px;
+	background-color:#B0FFDB;
+	border-radius:30px;
+	margin-top:10%;
+	min-height:400px;
+	min-width:250px;
+	float:left;
+
+}
+#bilderSammlung button{
+	min-width:150px;
+	width:auto;
+}
+.fhfh{
+	width:80%;
+	height:100%;
+	display:block;
+	margin-left:15%;
+	float:left;
+
+
+}
+
+#downloadButtonMosaik{
+	min-height:20px;
+	height:auto;
+	min-width:30px;
+	width:10px;
+	margin-top:5%;
+	margin-left:35%;
+}
+#downloadButtonMosaik button{
+	margin-left:auto;
+	margin-right:auto;
+	min-width:100px;
+	width:10px;
+}

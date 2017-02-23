@@ -1,0 +1,48 @@
+#anzeige{
+	float:left;
+	background-color:#E8E8E2;
+	width:80%;
+	height:100%;
+	
+}
+#anzeige2{
+	float:right;
+	background-color:#4ECEE8;
+	width:20%;
+	height:490px;
+	
+	background-color:#5BFF80;
+	border-radius:10px;
+	border:6px solid #00E83F;
+	display:block;
+	position:fixed;
+	margin-left:79%;
+	z-index:4;
+	position:fixed;
+	
+}
+#neuerPoolDiv button{
+	text-align:center;
+	margin-right:35%;
+}
+#pools{
+	float:left;
+	width:78%;
+	height:100%;
+	
+	background-color:#5BFF80;
+	border-radius:10px;
+	border:6px solid #00E83F;
+	
+	
+
+}
+input[type="radio"]{
+	
+	font-size:15px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+

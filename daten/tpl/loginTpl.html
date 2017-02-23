@@ -1,0 +1,36 @@
+<!--loginTpl.html-->
+{{define "loginTpl"}}
+<div id="login">
+	<form method="POST" action="/login"> 	
+		<table>
+		<tr>
+			<td>
+				Name
+			</td>
+			<td>
+	    		<input type="text" placeholder="Name" value="" name="name" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Kennwort
+			</td>
+			<td>
+				<input type="password" placeholder="Passwort" value="" name="pw1" />
+			</td>
+			</tr>
+			<tr>
+				<td>
+				<input id="loginButton" type="submit" value="login" name="login"/>
+				</td>
+			</tr>            
+		</table>
+		<div id="falscheEingabe">
+		{{.}}
+		</div>
+		</form>	
+	</div>
+	
+		<a href="/registrieren">Registrieren </a>
+		
+{{end}}

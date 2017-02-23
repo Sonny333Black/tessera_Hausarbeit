@@ -1,0 +1,6 @@
+<!--bilderAnzeigeVonSammlung.html-->
+<div class="alleBilder">
+	{{range .Bilder}}
+	<img name="{{.BildNameDB}}"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.ThumbBild}}"/>
+	{{end}}
+</div>

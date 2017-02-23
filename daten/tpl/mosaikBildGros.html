@@ -1,0 +1,36 @@
+<!--mosaikBildGros.html-->
+<div id="mosaikBild">
+<img name="{{.MosaikNameDB}}"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.MosaikNameDB}}"/>
+</div>
+
+
+
+<div id="infosBildMosaik">
+	<p>Bild: {{.MosaikName}}</p>	
+	<p>Breite: {{.MosaikBreite}}</p>	
+	<p>Hoehe: {{.MosaikHoehe}}</p>	
+	<p>(n besten) n = {{.NbestGeeignet}}</p>
+	<p>DoppelteVerwendung: {{if .DoppelteVerwendung}} ja {{else}} nein {{end}} </p>
+	
+	</hr>
+	<p>BildVonSammlung : {{.SammlungName}}</p>
+	
+	
+	<p>VerwendeterPool : {{.PoolEigenschaften.Name}} :</p>
+	
+	{{if .PoolEigenschaften.GenBilder}} 
+			<p>{{.PoolEigenschaften.Eigenschaften.Anzahl}} Bilder</p>
+			<p>{{.PoolEigenschaften.Eigenschaften.KachelGroesse}}x{{.PoolEigenschaften.Eigenschaften.KachelGroesse}}px</p>
+			<p>Helligkeit: {{.PoolEigenschaften.Eigenschaften.Helligkeit}}</p>
+			<p>{{if .PoolEigenschaften.Eigenschaften.Farbverlauf}} Farbverlauf Kacheln {{else}} Einfarbige Kacheln {{end}}</p>
+		
+	{{else}}
+			<p>Anzahl Bilder im Pool: {{.PoolEigenschaften.Eigenschaften.Anzahl}}</p>
+			<p>KachelGröße: {{.PoolEigenschaften.Eigenschaften.KachelGroesse}}px x{{.PoolEigenschaften.Eigenschaften.KachelGroesse}}px</p>
+	
+	{{end}}
+	<div id="downloadButtonMosaik">
+	<a  href="/download?fileName={{.MosaikNameDB}}&name={{.MosaikName}}"><button>Download</button></a>
+	<button id="backMosaikAnsicht" >Zurück</button>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<!--allePoolsAnzeigen.html-->
+<div class="fhfh">
+{{range .Pools}}
+<div id="{{.Name}}_Div"  class="pooldivs" >
+	<input type="radio" id="{{.Name}}" name="poolWahlMosaik" value="nBeste" class="poolsZurAuswahl">
+	<label for="{{.Name}}">
+		<p> {{.Name}}</p>
+		{{if .GenBilder}} 
+				<p>{{.Eigenschaften.Anzahl}} Bilder</p>
+				<p>{{.Eigenschaften.KachelGroesse}}x{{.Eigenschaften.KachelGroesse}}px</p>
+				<p>Helligkeit: {{.Eigenschaften.Helligkeit}}</p>
+				<p>{{if .Eigenschaften.Farbverlauf}} Farbverlauf {{else}} Einfarbig {{end}}</p>
+		
+		{{else}}
+				<p>{{.Eigenschaften.Anzahl}} Bilder</p>
+				<p>{{.Eigenschaften.KachelGroesse}}x{{.Eigenschaften.KachelGroesse}}px</p>
+			
+		{{end}}
+	<p>
+	RGB-Werte: Gelb
+	Hellligkeit: Weiß
+	<img id="aktiveBildHistorgramm" name="{{.Name}}" style="width :200px; height:150px"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.Eigenschaften.HistoBild}}"/>
+	</p>
+	</label>
+	</input>
+</div>
+{{end}}
+</div>
+
+
+
+
+

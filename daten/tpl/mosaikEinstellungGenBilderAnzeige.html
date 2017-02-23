@@ -1,0 +1,43 @@
+<!--mosaikEinstellungGenBilderAnzeige.html-->
+<div id="mosaikGenEinstellungen" >
+	
+
+	<img id="showAktiveMosaikVorlage" name="{{.BildNameDB}}" style="width :200px"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.BildNameDB}}"/>
+	
+	Breite: {{.Breite}}px
+	
+	Hohe: {{.Hohe}}px
+	RGB-Werte: Gelb
+	Hellligkeit: Weiß
+	<img id="histoBild" name="{{.BildName}}" style="width :200px;height:100px"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.HistoBild}}"/>
+	
+	
+		<input type="radio" id="einmal" name="kachelVerwendung" value="einmal"><label for="einmal">
+		einmal
+		</label></input>
+
+		<input type="radio" id="mehrmals" name="kachelVerwendung" value="mehrmals" checked><label for="mehrmals">mehrmals</label></input>
+
+		
+		<input type="radio" id="nBeste" name="nBesteKacheln" value="nBeste"><label for="nBeste">
+		
+		
+		<input id="anzahl" type="number" value="10" min="2" max="20" step="1" value="" />
+		nBeste	
+		</label></input>
+	
+		<input type="radio" id="amBesten" name="nBesteKacheln" value="amBesten" checked>
+		<label for="amBesten">
+		<!--nur für den Fall das sie sich das durchgucken, ja es ist quik and dirty-->
+		<p style="text-algin:center">amBesten</p>
+		</label>
+		</input>
+		
+		<button id="macheMosaikButton" >Los</button>
+	
+		<button id="goBack" >zurück</button>
+	
+	</div>
+	
+<div id="mosaikGenEinstellungenPoolAuswahl">
+</div>

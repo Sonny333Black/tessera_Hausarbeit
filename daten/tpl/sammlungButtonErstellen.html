@@ -1,0 +1,14 @@
+<!--sammlungButtonErstellen.html-->
+{{range .Sammlung}}
+
+<div id="{{.Name}}" class="sammlungenAuswahlAnzeigen" style="float:left;">
+<button name="{{.Name}}" >{{.Name}}</button>
+<br>
+<button name="delete{{.Name}}" >delete</button>
+</div>
+{{end}}
+
+
+
+
+

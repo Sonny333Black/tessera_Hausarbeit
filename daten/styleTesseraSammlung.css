@@ -1,0 +1,39 @@
+#anzeigeSammlung{
+	float:left;
+	background-color:#E8E8E2;
+	width:80%;
+	height:100%;
+	opacity:1;
+}
+.sammlungenAuswahlAnzeigen button{
+	min-width:150px;
+	width:auto;
+
+}
+#sammlungControll{
+	float:right;
+	background-color:#4ECEE8;
+	width:17%;
+	height:600px;
+	opacity:1;
+	background-color:#5BFF80;
+	border-radius:10px;
+	border:6px solid #00E83F;
+	display:block;
+	position:fixed;
+	margin-left:80%;
+	margin-top:10%;
+}
+#bilderSammlung{
+	float:left;
+	width:100%;
+	height:100%;
+	opacity:1;
+	background-color:#5BFF80;
+	border-radius:10px;
+	border:6px solid #00E83F;
+}
+#neueBilderSammlungDiv button{
+	min-width:150px;
+	width:auto;
+}

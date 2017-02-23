@@ -1,0 +1,38 @@
+<!--anzeige2.html-->
+{{define "anzeige2"}}
+<div id="anzeige2">
+	<div>
+		<input type="radio" id="generatepooltypeauswahl" name="pooltypeauswahl" value="generatepooltypeauswahl" checked ><label for="generatepooltypeauswahl">Generierte Bilder</label></input>
+		<br />
+		<input id="anzahl" type="number" value="100" min="10" max="2500" step="100"  style="width: 50px;"/>
+		<br />
+		<input id="helligkeit" type ="range" min ="50" max="255" step ="5" value ="175"/>
+		Helligkeit
+		<br />
+		<div>
+			<input type="radio" id="einfarbig" name="farbig" value="einfarbig" checked ><label for="einfarbig">Einfarbig</label></input>
+			<br />
+			<input type="radio" id="farbverlauf" name="farbig" value="farbverlauf"><label for="farbverlauf">Mit Farbverlauf</label></input>
+		</div>
+	</div>
+	<br />
+	
+		<input type="radio" id="uploadpooltypeauswahl" name="pooltypeauswahl" value="uploadpooltypeauswahl" ><label for="uploadpooltypeauswahl">Bilder hochladen</input>
+	
+	<br />
+	<div>
+		<br />
+		<input type="radio" id="10x10" name="bildergroesse" value="10x10"><label for="10x100">10x10px</label></input>
+		<br />
+		<input type="radio" id="25x25" name="bildergroesse" value="25x25" checked><label for="25x25">25x25px</label></input>
+		<br />
+		<input type="radio" id="50x50" name="bildergroesse" value="50x50"><label for="50x50">50x50px</label></input>
+		<br />
+	</div>
+
+	<div id="neuerPoolDiv">
+		<button id="neuerPoolButton" style="width: 100px; height: 100% ;float:right">neuer Pool</button>
+	</div>
+
+</div>
+{{end}}

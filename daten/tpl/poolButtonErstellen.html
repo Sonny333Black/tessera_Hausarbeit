@@ -1,0 +1,29 @@
+<!--poolButtonErstellen.html-->
+{{range .Pools}}
+<div id="{{.Name}}" style="float:left;"class="poolminidivs">
+	<button name="{{.Name}}" style="width: 100px; height: 100%">{{.Name}}</button>
+	<p>Bilder: {{.Eigenschaften.Anzahl}} </p>
+	{{if .GenBilder}} 
+			<p>{{.Eigenschaften.KachelGroesse}}x{{.Eigenschaften.KachelGroesse}}px</p>
+			<p>Helligkeit: {{.Eigenschaften.Helligkeit}}</p>
+			<p>{{if .Eigenschaften.Farbverlauf}} Farbverlauf {{else}} Einfarbig {{end}}</p>
+		
+	{{else}}
+			
+			<p>{{.Eigenschaften.KachelGroesse}}x{{.Eigenschaften.KachelGroesse}}px</p>
+	
+	{{end}}
+	<p>
+	RGB-Werte: Gelb
+	Hellligkeit: Weiß
+	<img id="aktiveBildHistorgramm" name="{{.Name}}" style="width :200px; height:150px"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.Eigenschaften.HistoBild}}&zahl={{.Zufall}}"/>
+	</p>
+	<button name="delete{{.Name}}" style="width: 100px; height: 100%">delete</button>
+</div>
+{{end}}
+
+
+
+
+
+

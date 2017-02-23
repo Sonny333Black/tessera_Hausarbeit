@@ -1,0 +1,31 @@
+<!--aktivesBildInfo.html-->
+	<div id="bildInfoAnzeige">
+	
+	<p>BildName: {{.BildName}}</p>
+	<p>Breite: {{.Breite}}px</p>
+	<p>Hohe: {{.Hohe}}px</p>
+	<p>
+	RGB-Werte: Gelb
+	Hellligkeit: Weiß
+	<img id="aktiveBildHistorgramm" name="{{.BildNameDB}}" style="width :200px; height:150px"  src="/gridGetImage?dbName=HA15DB_Christian_Schulz_570249&gridfsName=bilder&fileName={{.HistoBild}}"/>
+	</p>
+	
+	<hr/>
+	<h2>Neue Größe
+	</h2>
+	
+		<p>Breite: 
+			<input id="neuBreite" type="number" value="200" min="10" max="1000" step="10"  />
+		
+		</p>
+	<p>Hohe: 
+		<input id="neuHoehe" type="number" value="200" min="10" max="1000" step="10"  />
+	
+	</p>
+	
+	<p>
+		<button id="neueGrose" >Neues Bild erstelllen</button>
+	</p>
+	
+	
+	</div>

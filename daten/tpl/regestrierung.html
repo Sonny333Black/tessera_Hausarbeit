@@ -1,0 +1,61 @@
+<!--regestrierung.html-->
+{{define "registrieren"}}
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>Regestrierung</title>
+  	<link rel="stylesheet" href="/loginStyle.css"></link>
+</head>
+<body style="font-family: sans-serif;">
+	
+	<h1>
+		Registrierung
+	</h1>
+	<div id="regstrierungs">
+	<form method="POST" action="/registrieren"> 
+		<table>
+			<th></th>
+			<tr>
+				<td>
+					Name
+				</td>
+				<td>
+					 <input type="text" placeholder="Name" value="" name="name" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kennwort
+				</td>
+				<td>
+					 <input type="password" placeholder="Passwort" value="" name="pw1" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kennwort wiederholen
+				</td>
+				<td>
+					 <input type="password" placeholder="Passwort" value="" name="pw2" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input id="machRegestration" type="submit" value="registrieren" name="registrieren"/>
+				</td>
+			</tr>
+		<div id="meldung">
+				
+		</div>
+		</table>
+	</form>
+	
+	</div>
+	<h2>
+	{{.}}
+	</h2>
+	<a href="http://localhost:4242/login">zum Login </a>
+  </body>
+</html>
+{{end}}

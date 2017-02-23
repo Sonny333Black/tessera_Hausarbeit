@@ -1,0 +1,75 @@
+
+body{
+	text-align:center;
+	background-color:#CDFFDB;
+	font-family: Sans-Serif, Arial, Helvetica;
+}
+
+#login{
+	float:left;
+	width:50%;
+}
+#registrierung{
+	width:50%;
+}
+#falscheEingabe{
+	color:red;
+}
+#inhaltLogin{
+	background-color:#5CE84F;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+	height:auto;
+	min-height:200px;
+	margin-top:12%;
+	border-radius:5px;
+	text-align:center;
+
+}
+table{
+	background-color:#57FF7B;
+	border-radius:10px;
+	border:6px solid #C7E84F;
+
+}
+#login{
+	margin-top:10%;
+	margin-left:19%;
+	margin-right:auto;
+	
+}
+a{
+	display:block;
+	text-align:center;
+	padding:10px;
+	padding-right:40px;
+	padding-left:40px;
+	
+}
+header{
+	background-color:#C7E84F;
+	width:auto;
+	height:auto;
+	min-height:20px;
+	font-size:20px;
+	color:#01567b;
+	border-radius:10px;
+	border:6px solid #C7E84F;
+	text-align:center;
+
+}
+input[type="submit"]{
+	margin-top:10%;
+	margin-left:140%;
+	font-size:15px;
+}
+
+#regstrierungs{
+	width:400px;
+	height:auto;
+	min-height:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
